@@ -12,7 +12,7 @@ function InputArea(props) {
       <input onChange={handleChange} type="text" value={inputText} />
       <button
         onClick={() => {
-          PaymentResponse.onAdd(inputText);
+          props.onAdd(inputText);
           setInputText("");
         }}
       >
